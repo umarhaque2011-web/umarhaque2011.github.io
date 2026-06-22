@@ -83,8 +83,41 @@ h2 {
 p {
     line-height: 1.6;
 }
+    .logo {
+    text-align: center;
+    font-size: 3rem;
+    color: #38bdf8;
+
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #38bdf8;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #38bdf8,
+            0 0 40px #38bdf8,
+            0 0 60px #38bdf8;
+    }
+}
+    .logo {
+    text-align: center;
+    font-size: 3rem;
+    color: #38bdf8;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 </style>
-  <title>LearnLab</title>
+  <h1 class="logo">📚 LearnLab</h1>
 </head>
   <body> 
     <button id="themeButton" onclick="toggleTheme()">
