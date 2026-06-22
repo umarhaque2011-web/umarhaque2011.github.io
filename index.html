@@ -2,6 +2,31 @@
 <html>
 <head>
   <style>
+    .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #334155;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #38bdf8;
+}
     .light-mode {
     background-color: white;
     color: black;
@@ -67,11 +92,21 @@ p {
   <h1>Welcome to LearnLab!</h1>
   <p>Helping students learn better, one chapter at a time.</p>
   
-  <h2>Subjects</h2>
-  <ul>
-    <li><a href= "Science.html">Science</a></li>
-    <li><a href= "Maths.html">Mathematics</a></li>
-  </ul>
+ <h2>Subjects</h2>
+
+<div class="card-container">
+
+    <a href="Science.html" class="card">
+        <h3>🔬 Science</h3>
+        <p>Biology, Chemistry and Physics notes.</p>
+    </a>
+
+    <a href="Maths.html" class="card">
+        <h3>📐 Mathematics</h3>
+        <p>Concepts, formulas and practice questions.</p>
+    </a>
+
+</div>
   
 
     <h2>About</h2>
