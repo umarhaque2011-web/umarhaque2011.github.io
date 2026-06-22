@@ -53,6 +53,38 @@ h2 {
 p {
     line-height: 1.6;
 }
+          .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: #334155;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px #38bdf8,
+        0 0 40px #38bdf8;
+
+    background: #475569;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-top: 0;
+}
 </style>
 </head>
 <body>
@@ -88,6 +120,8 @@ p {
     <a href="eye.html" class="card">
       <h3>👀 Human Eye and the Colourful World</h3>
      <p>Work in progress...</p></a>
+
+</div>
 
 </body>
 
