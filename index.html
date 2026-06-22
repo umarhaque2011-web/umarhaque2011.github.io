@@ -2,6 +2,18 @@
 <html>
 <head>
   <style>
+    .light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode nav {
+    background-color: #dddddd;
+}
+
+.light-mode nav a {
+    color: black;
+}
 body {
     background-color: #0f172a;
     color: white;
@@ -44,6 +56,9 @@ p {
   <title>LearnLab</title>
 </head>
   <body> 
+    <button id="themeButton" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
     <nav>
     <a href="index.html">Home</a>
     <a href="Maths.html">Mathematics</a>
@@ -65,5 +80,20 @@ p {
         Hi! I'm Umar.
         I created this website to help students understand concepts in a simpler way while strengthening my own learning.
     </p>
+<script>
+function toggleTheme() {
+
+    document.body.classList.toggle("light-mode");
+
+    let btn = document.getElementById("themeButton");
+
+    if (document.body.classList.contains("light-mode")) {
+        btn.innerHTML = "☀️ Light Mode";
+    } else {
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+
+}
+</script>
   </body>
 </html>
